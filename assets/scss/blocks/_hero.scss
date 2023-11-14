@@ -1,0 +1,137 @@
+/* --- .hero --- */
+.hero {
+	margin: 0 auto;
+	padding: 40px 15px 60px;
+	position: relative;
+	height: 720px;
+	max-width: 1230px;
+	width: 100%;
+	background-image: url("/assets/images/hero-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: cover;
+	z-index: 1;
+
+	&-block {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 100%;
+
+		&__content {
+			margin-left: 175px;
+			max-width: 370px;
+			width: 100%;
+		}
+
+		&__startdate {
+			position: absolute;
+			right: 190px;
+			top: 135px;
+		}
+	}
+
+	&-content {
+		&__label {
+			color: #7b7b7b;
+			font-size: 10px;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: 2.7px;
+			text-transform: uppercase;
+		}
+		&__title {
+			margin-bottom: 20px;
+			color: #fff;
+			font-weight: 400;
+			line-height: 1;
+
+			.accent-text {
+				display: inline-block;
+				padding-right: 10px;
+				text-shadow: -15px 15px 15px #000;
+				font-size: 123px;
+				letter-spacing: -2.5px;
+			}
+
+			i {
+				font-style: normal;
+				text-shadow: -7px 7px 7px #000;
+				font-size: 56px;
+				letter-spacing: -1.1px;
+			}
+			span {
+				font-size: 68px;
+				letter-spacing: -1.4px;
+				text-shadow: -12px 12px 12px #000;
+			}
+		}
+
+		&__slogan {
+			display: inline-block;
+			margin-bottom: 30px;
+			color: #7b7b7b;
+			font-size: 10px;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: 2.7px;
+			text-transform: uppercase;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 1.4;
+			letter-spacing: -0.3px;
+		}
+	}
+
+	.startdate {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 155px;
+		height: 155px;
+		border-radius: 184.286px;
+		background: var(--Linear, linear-gradient(202deg, #ffc82a 8.21%, #ffe290 42.95%, #ffca34 74.3%, #ffc82a 74.31%));
+		box-shadow: 17.14286px 25px 19.28572px 0px rgb(0 0 0 / 56%);
+
+		&-title {
+			display: inline-flex;
+			padding: 5px 10px;
+			border-radius: 3px;
+			background-color: #1d1c1a;
+
+			color: #fff;
+			font-size: 8px;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: 1.7px;
+			text-transform: uppercase;
+		}
+
+		&-month {
+			color: #1d1c1a;
+			text-align: center;
+			font-family: PT Serif Caption;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.4;
+			letter-spacing: -0.32px;
+		}
+
+		&-number {
+			color: #1d1c1a;
+			text-align: center;
+			font-family: PT Serif Caption;
+			font-size: 67px;
+			font-weight: 400;
+			line-height: 1;
+			letter-spacing: -1.4px;
+		}
+	}
+}
+/* --- // .hero --- */

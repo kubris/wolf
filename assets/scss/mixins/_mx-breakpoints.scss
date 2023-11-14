@@ -1,0 +1,29 @@
+// @include mxw768 { font-size: 1.6rem } 
+@mixin mxw992 {
+	@media (max-width: (991px)) {
+		@content;
+	}
+}
+
+@mixin mxw768 {
+	@media (max-width: (767px)) {
+		@content;
+	}
+}
+
+@mixin mxw576 {
+	@media (max-width: (575px)) {
+		@content;
+	}
+}
+@mixin mxw480 {
+	@media (max-width: (480px)) {
+		@content;
+	}
+}
+
+@mixin mxw360 {
+	@media (max-width: (360px)) {
+		@content;
+	}
+}

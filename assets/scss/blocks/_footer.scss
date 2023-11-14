@@ -1,0 +1,35 @@
+/* --- footer --- */
+.footer {
+	margin-top: auto;
+	padding: 35px 0;
+	background-color: #252525;
+
+	@include mxw480 { 
+		text-align: center;
+	}
+
+	&-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		@include mxw480 { 
+			flex-direction: column;
+			justify-content: center; 
+		}
+	}
+}
+/* --- // footer --- */
+
+.copyright {
+	font-size: 15px;
+	color: var(--textLightColor);
+	p {
+		margin-bottom: 10px;
+		sup {
+			font-size: 10px;
+		}
+	}
+}
