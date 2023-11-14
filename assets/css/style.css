@@ -346,7 +346,71 @@ h6 {
   background: linear-gradient(0deg, rgba(67, 67, 67, 0.1516981793) 0%, rgb(67, 67, 67) 100%);
 }
 
+.copyright {
+  font-size: 15px;
+  color: var(--textLightColor);
+}
+.copyright p {
+  margin-bottom: 10px;
+}
+.copyright p sup {
+  font-size: 10px;
+}
+
 /* --- // common styles --- */
+/* ==== // sprite.svg ==== */
+.social {
+  padding: 5px 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  border-radius: 15px;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.social__icon {
+  width: 30px;
+  height: 30px;
+  fill: #fffd52;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.social__link:hover .social__icon {
+  fill: lime;
+}
+
+/* --- custom icon hover color --- */
+.social__link:hover .social__icon.ytb {
+  fill: #eb0f18;
+}
+
+.social__link:hover .social__icon.twt {
+  fill: #51a1dc;
+}
+
+.social__link:hover .social__icon.inst {
+  fill: #c539e5;
+}
+
+.social__link:hover .social__icon.fsb {
+  fill: #9abdf9;
+}
+
+/* ==== // end sprite.svg ==== */
 /* --- buttons  --- */
 .btn {
   display: -webkit-inline-box;
@@ -790,6 +854,110 @@ h6 {
 }
 
 /* --- // become --- */
+/* --- offer --- */
+.offer {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 55px;
+  padding: 38px 20px;
+  max-width: 960px;
+  width: 100%;
+  text-align: center;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(85deg, #ffc82a -21.83%, #ffe290 52.14%, #ffca34 118.9%, #ffc82a 118.92%), linear-gradient(299deg, rgba(255, 255, 255, 0) -2.62%, rgba(255, 255, 255, 0.13) 47.1%, rgba(255, 255, 255, 0) 109.95%);
+}
+.offer-block {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+  color: #080808;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+.offer-block__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
+  padding: 19px 51px 19px 52px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#ffe9ab), to(#ffd253));
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
+  background-blend-mode: color, normal;
+  -webkit-box-shadow: 0px 3px 0px 0px #a3a3a3, 7px 6px 11px 0px #ccc inset, -9px -11px 9px 0px rgba(255, 255, 255, 0.75) inset;
+          box-shadow: 0px 3px 0px 0px #a3a3a3, 7px 6px 11px 0px #ccc inset, -9px -11px 9px 0px rgba(255, 255, 255, 0.75) inset;
+  color: #1d1c1a;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.05px;
+}
+.offer-block p {
+  margin-bottom: 10px;
+}
+.offer-block__link {
+  font-weight: 500;
+}
+.offer-block__link + .offer-block__link {
+  margin-top: 5px;
+}
+.offer::before {
+  content: "";
+}
+
+.curve-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.curve-top__line {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 1000px;
+  height: 1500px;
+  border-radius: 50%;
+  border-color: #000;
+  border: 40px solid rgba(255, 200, 42, 0.6666666667);
+}
+
+.curve-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.curve-bottom__line {
+  position: absolute;
+  top: 150px;
+  left: -40px;
+  width: 1000px;
+  height: 1500px;
+  border-radius: 50%;
+  border-color: #000;
+  border: 40px solid rgba(255, 200, 42, 0.6666666667);
+}
+
+/* --- // offer --- */
 /* --- footer --- */
 .footer {
   margin-top: auto;
@@ -833,14 +1001,4 @@ h6 {
   }
 }
 
-/* --- // footer --- */
-.copyright {
-  font-size: 15px;
-  color: var(--textLightColor);
-}
-.copyright p {
-  margin-bottom: 10px;
-}
-.copyright p sup {
-  font-size: 10px;
-}/*# sourceMappingURL=style.css.map */
+/* --- // footer --- *//*# sourceMappingURL=style.css.map */

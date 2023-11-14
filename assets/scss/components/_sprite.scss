@@ -1,0 +1,36 @@
+/* ==== // sprite.svg ==== */
+  .social {
+	padding: 5px 10px;
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;  
+	list-style: none;
+	border-radius: 15px;
+  }
+  .social__link {
+	display: inline-block;
+  }
+  .social__icon {
+	width: 30px;
+	height: 30px;
+	fill: #fffd52;
+	transition: .2s;
+  }
+  .social__link:hover .social__icon {
+	fill: lime;
+  }
+  /* --- custom icon hover color --- */
+  .social__link:hover .social__icon.ytb{
+	fill: #eb0f18;
+  }
+  .social__link:hover .social__icon.twt{
+	fill: #51a1dc;
+  }
+  .social__link:hover .social__icon.inst{
+	fill: #c539e5;
+  }
+  .social__link:hover .social__icon.fsb{
+	fill: #9abdf9;
+  }
+/* ==== // end sprite.svg ==== */

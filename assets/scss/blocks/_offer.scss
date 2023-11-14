@@ -1,0 +1,99 @@
+/* --- offer --- */
+.offer {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto 55px;
+	padding: 38px 20px;
+	max-width: 960px;
+	width: 100%;
+	text-align: center;
+	border-radius: 14px;
+	overflow: hidden;
+	background: linear-gradient(85deg, #ffc82a -21.83%, #ffe290 52.14%, #ffca34 118.9%, #ffc82a 118.92%),
+		linear-gradient(299deg, rgba(255, 255, 255, 0) -2.62%, rgba(255, 255, 255, 0.13) 47.1%, rgba(255, 255, 255, 0) 109.95%);
+
+	&-block {
+		margin: 0 auto;
+		max-width: 320px;
+		width: 100%;
+		color: #080808;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: -0.3px;
+
+		&__button {
+			display: inline-flex;
+			margin-bottom: 20px;
+			padding: 19px 51px 19px 52px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 13px;
+			border: 1px solid rgba(255, 255, 255, 0.85);
+			background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
+			background-blend-mode: color, normal;
+			box-shadow: 0px 3px 0px 0px #a3a3a3, 7px 6px 11px 0px #ccc inset, -9px -11px 9px 0px rgba(255, 255, 255, 0.75) inset;
+
+			color: #1d1c1a;
+			text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+			font-family: DM Sans;
+			font-size: 21px;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: -1.05px;
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		&__link {
+			font-weight: 500;
+
+			& + & {
+				margin-top: 5px;
+			}
+		}
+	}
+
+	&::before {
+		content: "";
+	}
+}
+
+.curve-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	&__line {
+		position: absolute;
+		bottom: 40px;
+		right: 40px;
+		width: 1000px;
+		height: 1500px;
+		border-radius: 50%;
+		border-color: #000;
+		border: 40px solid #ffc82aaa;
+	}
+}
+.curve-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	&__line {
+		position: absolute;
+		top: 150px;
+		left: -40px;
+		width: 1000px;
+		height: 1500px;
+		border-radius: 50%;
+		border-color: #000;
+		border: 40px solid #ffc82aaa;
+	}
+}
+/* --- // offer --- */
