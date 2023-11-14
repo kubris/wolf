@@ -1,0 +1,62 @@
+/* --- people --- */
+.people {
+	&-wrapper {
+		display: flex;
+		gap: 65px;
+		margin: 0 auto;
+		padding: 50px 65px;
+		max-width: 965px;
+		width: 100%;
+		border-radius: 10.286px;
+		border: 1px solid #909090;
+		background: linear-gradient(300deg, rgba(255, 255, 255, 0.09) -2.75%, rgba(255, 255, 255, 0) 88.2%);
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		&__title {
+			.accent-text {
+				display: block;
+			}
+		}
+	}
+
+	&-connects {
+		display: flex;
+		gap: 30px;
+		width: 100%;
+
+		&__block {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	&-figure {
+		min-width: 358px;
+		height: 338px;
+		border-radius: 15px;
+		background: #2c2c2c;
+		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='dimgrey' stroke-width='4' stroke-dasharray='15%2c 25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+
+		&__block {
+			border-radius: 15px;
+			background: url("/assets/images/people.jpg"), lightgray -164.392px -26.111px / 191.813% 114.177% no-repeat;
+			box-shadow: -21.42857px 14.57143px 66px 0px rgba(0, 0, 0, 0.51);
+			height: 100%;
+			transform: rotate(4.973deg);
+			flex-shrink: 0;
+			overflow: hidden;
+			img {
+				display: block;
+				height: 100px;
+				width: 100px;
+			}
+		}
+	}
+}
+/* --- // people --- */
