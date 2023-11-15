@@ -21,14 +21,15 @@
 	&-block {
 		position: relative;
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
 		height: 100%;
 		@include mxw992 { 
 			flex-direction: column; 
 			align-items: flex-start;
 			gap: 30px;
 		}
-		@include mxw480 {gap:70px}
+		@include mxw480 {gap:20px}
 
 		&__content {
 			margin-left: 175px;
@@ -110,6 +111,24 @@
 			font-weight: 700;
 			line-height: 1.4;
 			letter-spacing: -0.3px;
+
+			@include mxw480 {margin-bottom: 10px}
+		}
+
+		&__buttons {
+			margin-left: 175px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			width: 100%;
+			@include mxw992 {
+				margin-left: 30px;
+				width: calc(100% - 30px);
+			}
+			@include mxw480 {
+				margin-left: 10px;
+				width: calc(100% - 10px);
+			}
 		}
 	}
 

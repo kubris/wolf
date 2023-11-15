@@ -100,11 +100,13 @@ h6 {
 	justify-items: stretch;
 	row-gap: 20px;
 	column-gap: 25px;
-	@include mxw768 { gap: 10px} 
+	@include mxw768 {
+		gap: 10px;
+	}
 	@include mxw576 {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
-	} 
+	}
 }
 
 .section-title {
@@ -185,6 +187,23 @@ h6 {
 		sup {
 			font-size: 10px;
 		}
+	}
+}
+
+.no-scroll {
+	overflow: hidden;
+	touch-action: none;
+
+	&::before {
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #000000ee;
+		z-index: 2;
 	}
 }
 /* --- // common styles --- */

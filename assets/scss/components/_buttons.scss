@@ -1,7 +1,6 @@
 /* --- buttons  --- */
 .btn {
 	display: inline-flex;
-
 	max-width: 210px;
 	width: 100%;
 	height: 68px;
@@ -10,7 +9,7 @@
 	align-items: center;
 	flex-shrink: 0;
 
-	color: #1d1c1a;	
+	color: #1d1c1a;
 	font-family: DM Sans;
 	font-size: 18px;
 	font-weight: 700;
@@ -18,12 +17,23 @@
 	letter-spacing: -0.9px;
 
 	border-radius: 12px;
+
+	transition: text-shadow 0.2s;
+
+	@include mxw768 {
+		height: 60px;
+	}
+}
+.btn--yellow {
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(180deg, #ffe290 0%, #ffc82a 100%);
 	background-blend-mode: overlay, normal;
-	transition: text-shadow 0.2s;
-
-	@include mxw768 { height: 60px}
+}
+.btn--grey {
+	border: 1px solid rgba(255, 255, 255, 0.85);
+	background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
+	background-blend-mode: color, normal;
+	box-shadow: 0px 3px 0px 0px #a3a3a3, 7px 6px 11px 0px #ccc inset, -9px -11px 9px 0px rgba(255, 255, 255, 0.75) inset;
 }
 .btn:hover {
 	text-shadow: 0 2.6px 3px rgba(0, 0, 0, 0.75);

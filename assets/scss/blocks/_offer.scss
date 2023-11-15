@@ -10,7 +10,9 @@
 	overflow: hidden;
 	background: linear-gradient(85deg, #ffc82a -21.83%, #ffe290 52.14%, #ffca34 118.9%, #ffc82a 118.92%),
 		linear-gradient(299deg, rgba(255, 255, 255, 0) -2.62%, rgba(255, 255, 255, 0.13) 47.1%, rgba(255, 255, 255, 0) 109.95%);
-		@include mxw992 {margin: 0 15px 50px;} 
+	@include mxw992 {
+		margin: 0 15px 50px;
+	}
 
 	&-block {
 		margin: 0 auto;
@@ -21,31 +23,27 @@
 		font-weight: 400;
 		letter-spacing: -0.3px;
 
-		&__button {
-			display: inline-flex;
-			margin-bottom: 20px;
-			padding: 20px;
+		&__buttons {
+			margin-bottom: 25px;
+			display: flex;
 			justify-content: center;
-			align-items: center;
-			max-width: 190px;
-			width: 100%;
-			border-radius: 13px;
-			border: 1px solid rgba(255, 255, 255, 0.85);
-			background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
-			background-blend-mode: color, normal;
-			box-shadow: 0px 3px 0px 0px #a3a3a3, 7px 6px 11px 0px #ccc inset, -9px -11px 9px 0px rgba(255, 255, 255, 0.75) inset;
+			flex-wrap: wrap;
+			gap: 15px;
 
-			color: #1d1c1a;
-			text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-			font-family: DM Sans;
-			font-size: 21px;
-			font-weight: 700;
-			line-height: 1;
-			letter-spacing: -1.05px;
-			transition: text-shadow 0.2s;
+			.btn--yellow {
+				border: 0.857px solid rgba(255, 255, 255, 0.25);
+				background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(180deg, #ffe290 0%, #ffc82a 100%);
+				background-blend-mode: overlay, normal;
+				box-shadow: 0px 2.57143px 0px 0px #c78700, 6px 5.14286px 9.42857px 0px #ffc82a inset,
+					-7.71429px -9.42857px 7.71429px 0px rgb(255 255 255 / 23%) inset;
+			}
+			.btn--grey {
+				border: 0.857px solid rgba(255, 255, 255, 0.25);
 
-			&:hover {
-				text-shadow: 0 2.6px 3px rgb(0 0 0 / 75%);
+				background: #323423, linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
+				background-blend-mode: color, normal;
+				box-shadow: 0px 2.6px 0px 0px rgba(255, 255, 255, 0.4), 6px 5px 9.5 0px rgba(0, 0, 0, 0.2) inset,
+					-7.7px -9.5px 7.7px 0px rgba(255, 255, 255, 0.23) inset;
 			}
 		}
 
@@ -61,12 +59,11 @@
 			}
 			a {
 				display: inline-block;
-				position: relative;	
+				position: relative;
 				transition: text-shadow 0.2s;
-			
-				&:hover{
+
+				&:hover {
 					text-shadow: 0 2.6px 3px rgb(0 0 0 / 75%);
-					
 				}
 			}
 		}
