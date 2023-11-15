@@ -3,6 +3,7 @@
 	display: none;
 	position: fixed;
 	padding: 40px 55px;
+	min-height: 645px;
 	max-width: 532px;
 	width: 100%;
 	top: 50%;
@@ -32,6 +33,7 @@
 	}
 
 	&-logo {
+		padding: 40px 0 20px;
 		text-align: center;
 		img {
 			width: 100px;
