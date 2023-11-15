@@ -5,7 +5,7 @@
 	max-width: 210px;
 	width: 100%;
 	height: 68px;
-	padding: 22px 68px 22px 68px;
+	padding: 22px;
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
@@ -22,6 +22,8 @@
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(180deg, #ffe290 0%, #ffc82a 100%);
 	background-blend-mode: overlay, normal;
 	transition: text-shadow 0.2s;
+
+	@include mxw768 { height: 60px}
 }
 .btn:hover {
 	text-shadow: 0 2.6px 3px rgba(0, 0, 0, 0.75);

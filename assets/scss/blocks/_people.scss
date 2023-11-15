@@ -1,7 +1,9 @@
 /* --- people --- */
 .people {
 	margin-bottom: 100px;
-	
+	@include mxw992 {padding: 0 15px}
+	@include mxw768 {margin-bottom: 60px;}
+
 	&-wrapper {
 		display: flex;
 		gap: 65px;
@@ -12,6 +14,14 @@
 		border-radius: 10.286px;
 		border: 1px solid #909090;
 		background: linear-gradient(300deg, rgba(255, 255, 255, 0.09) -2.75%, rgba(255, 255, 255, 0) 88.2%);
+
+		@include mxw992 {
+			padding: 50px 35px;
+			flex-direction: column-reverse;
+			max-width: 600px;
+		}
+		@include mxw480 {padding: 30px 15px}
+		
 	}
 
 	&-content {
@@ -31,6 +41,10 @@
 		display: flex;
 		gap: 30px;
 		width: 100%;
+		@include mxw480 {
+			flex-direction: column;
+			gap: 10px;
+		}
 
 		&__block {
 			display: flex;
@@ -41,14 +55,26 @@
 
 	&-figure {
 		min-width: 358px;
+		max-width: 358px;
 		height: 338px;
 		border-radius: 15px;
-		background: #2c2c2c;
+		background-color: #2c2c2c;
 		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='dimgrey' stroke-width='4' stroke-dasharray='15%2c 25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+		background-repeat: no-repeat;
+		@include mxw992 {
+			margin: 0 auto;
+			height: auto;
+			width: 100%;
+			min-width: unset;
+			aspect-ratio: 358/338;
+		}
 
 		&__block {
 			border-radius: 15px;
-			background: url("/assets/images/people.jpg"), lightgray -164.392px -26.111px / 191.813% 114.177% no-repeat;
+			background-image: url("/assets/images/people.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 			box-shadow: -21.42857px 14.57143px 66px 0px rgba(0, 0, 0, 0.51);
 			height: 100%;
 			transform: rotate(4.973deg);

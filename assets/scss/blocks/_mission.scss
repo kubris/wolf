@@ -1,6 +1,7 @@
 /* --- mission --- */
 .mission {
 	margin-bottom: 90px;
+	padding: 0 15px;
 
 	&-wrapper {
 		display: flex;
@@ -8,6 +9,10 @@
 		gap: 50px;
 		max-width: 820px;
 		width: 100%;
+		@include mxw992 { 
+			flex-direction: column;
+			max-width: 600px;
+		} 
 	}
 
 	&-content {
@@ -21,6 +26,7 @@
 			font-weight: 500;
 			line-height: 1.4;
 			letter-spacing: -0.5px;
+			@include mxw992 {font-size: 20px} 
 
 			span:not(.accent-text) {
 				color: var(--textLightColor);

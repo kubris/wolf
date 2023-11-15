@@ -5,12 +5,12 @@
 	margin: 0 auto 55px;
 	padding: 38px 20px;
 	max-width: 960px;
-	width: 100%;
 	text-align: center;
 	border-radius: 14px;
 	overflow: hidden;
 	background: linear-gradient(85deg, #ffc82a -21.83%, #ffe290 52.14%, #ffca34 118.9%, #ffc82a 118.92%),
 		linear-gradient(299deg, rgba(255, 255, 255, 0) -2.62%, rgba(255, 255, 255, 0.13) 47.1%, rgba(255, 255, 255, 0) 109.95%);
+		@include mxw992 {margin: 0 15px 50px;} 
 
 	&-block {
 		margin: 0 auto;
@@ -24,9 +24,11 @@
 		&__button {
 			display: inline-flex;
 			margin-bottom: 20px;
-			padding: 19px 51px 19px 52px;
+			padding: 20px;
 			justify-content: center;
 			align-items: center;
+			max-width: 190px;
+			width: 100%;
 			border-radius: 13px;
 			border: 1px solid rgba(255, 255, 255, 0.85);
 			background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(180deg, #ffe9ab 0%, #ffd253 100%);
@@ -40,6 +42,11 @@
 			font-weight: 700;
 			line-height: 1;
 			letter-spacing: -1.05px;
+			transition: text-shadow 0.2s;
+
+			&:hover {
+				text-shadow: 0 2.6px 3px rgb(0 0 0 / 75%);
+			}
 		}
 
 		p {
@@ -52,11 +59,17 @@
 			& + & {
 				margin-top: 5px;
 			}
+			a {
+				display: inline-block;
+				position: relative;	
+				transition: text-shadow 0.2s;
+			
+				&:hover{
+					text-shadow: 0 2.6px 3px rgb(0 0 0 / 75%);
+					
+				}
+			}
 		}
-	}
-
-	&::before {
-		content: "";
 	}
 }
 
@@ -67,6 +80,7 @@
 	width: 300px;
 	height: 300px;
 	overflow: hidden;
+	z-index: -1;
 	&__line {
 		position: absolute;
 		bottom: 40px;
@@ -85,6 +99,7 @@
 	width: 300px;
 	height: 300px;
 	overflow: hidden;
+	z-index: -1;
 	&__line {
 		position: absolute;
 		top: 150px;

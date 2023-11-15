@@ -9,16 +9,23 @@
 		h2 {
 			margin-bottom: 35px;
 			color: #fff;
+			@include mxw480 { 
+				font-size: 26px; 
+				margin-bottom: 20px;
+			}
 		}
 	}
 
 	&-gallery {
 		margin: 0 auto 60px;
 		max-width: 820px;
+		@include mxw768 { margin-bottom: 30px }
 
 		&__item {
 			padding: 20px;
 			border-radius: 6px;
+
+			@include mxw480 { padding: 10px }
 		}
 
 		&__icon {
