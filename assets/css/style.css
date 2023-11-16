@@ -714,7 +714,6 @@ h6 {
   height: 720px;
   max-width: 1230px;
   width: 100%;
-  background-image: url("/assets/images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: cover;
@@ -1151,7 +1150,6 @@ h6 {
 }
 .people-figure__block {
   border-radius: 15px;
-  background-image: url("/assets/images/people.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
